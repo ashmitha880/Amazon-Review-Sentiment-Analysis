@@ -1,0 +1,22 @@
+# Secrets
+.env
+
+# Environments
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Data (raw JSON may contain reviewer info; can also just be large)
+data/raw/*.json
+data/processed/*.csv
+
+# Model artifacts (DistilBERT checkpoints are 250MB+, too big for git)
+models/*
+!models/.gitkeep
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+.ipynb_checkpoints/
